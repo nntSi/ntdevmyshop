@@ -14,12 +14,13 @@
     <table class="table table-hover border shadow-sm mt-4" style="width: 100%;" id="table">
         <thead>
             <tr>
-                <th style="width: 12%;">รหัสลูกค้า</th>
-                <th style="width: 30%;">Fullname</th>
-                <th style="width: 10%;">Tel</th>
-                <th style="width: 10%;">Job</th>
-                <th style="width: 25%;">Location</th>
-                <th style="width: 8%;"></th>
+                <th>ลำดับ</th>
+                <th >รหัสลูกค้า</th>
+                <th >Fullname</th>
+                <th >Tel</th>
+                <th >Job</th>
+                <th >Location</th>
+                <th ></th>
             </tr>
         </thead>
         <tbody id="prdtable">
@@ -27,6 +28,7 @@
             foreach ($CustomerQuery as $cstmQ) {
                 $i++; ?>
                 <tr>
+                    <td><?php echo $i ?></td>
                     <td><?php echo $cstmQ->customer_id; ?></td>
                     <td>
                         <div class="d-flex align-items-center">
